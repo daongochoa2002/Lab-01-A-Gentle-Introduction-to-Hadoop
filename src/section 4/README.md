@@ -10,12 +10,16 @@ A list of lines, each line has two words separated by a space. For example, “a
 ## 4.1.2 Output
 A list of lines, each line has two elements n l, in which n is the name of the node and l is the label of the node.
 
-## Algorithm
+## Solution
 
 Mapper: read the raw rating data which is in the format of the pair of characters, “a b” indicates the relationship aRb for instance.
+
 input: <offset, pair<a, b>>
+
 output: <a, 1> and <b, -1> (<key,value>)
+
 Reducer: aggregate the data by the key character, then find the sum of their values. if the final value is greater than 0, that is positive relationship, if is equal to 0, that  is equal, then is negative.
+
 input: <key, (value1, value2, ...)> output: <key, value>
 
 follow commands below:
