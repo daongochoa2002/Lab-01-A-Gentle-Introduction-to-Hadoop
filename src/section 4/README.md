@@ -25,5 +25,7 @@ input: <key, (value1, value2, ...)> output: <key, value>
 follow commands below:
 
 $ ~/hadoop/bin/hadoop com.sun.tools.javac.Main *.java
+
 $ jar cf dr.jar *.class
+
 $ ~/hadoop/bin/hadoop jar dr.jar Driver input intermediate final
