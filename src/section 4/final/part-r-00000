@@ -3,3 +3,6 @@ B	eq
 C	neg
 D	pos
 E	neg
+F	neg
+G	eq
+H	neg
